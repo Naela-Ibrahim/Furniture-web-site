@@ -504,6 +504,156 @@ section.slider img {
 
 }
 
+/* Sprites Section */
+.sprites {
+  display: flex;
+  margin: 40px 20px 40px 0;
+  
+}
+
+.sprite-item {
+  text-align: center;
+  flex: 1;
+  border-right:  1px solid var(--main-color);
+}
+
+.sprite-item:last-child {
+  border-right: none;
+}
+
+.sprite-info h3 {
+  font-size: 17px;
+}
+
+.sprite-icon {
+  background-image: url(../images/service-icon.png);
+  height: 50px;
+  background-repeat: no-repeat;
+  
+}
+
+.sprite-icon-1 {
+  background-position: center 5px;
+  transition: All 0.5s;
+}
+.sprite-icon-2 {
+  background-position: center -180px;
+  transition: All 0.5s;
+}
+.sprite-icon-3 {
+  background-position: center -366px;
+  transition: All 0.5s;
+}
+
+.sprite-icon-4 {
+  background-position: center -549px;
+  transition: All 0.5s;
+}
+
+.sprite-icon-5 {
+  background-position: center -734px;
+  transition: All 0.5s;
+}
+
+.sprite-item:hover .sprite-icon-1 {
+  background-position: center -86px;
+}
+
+.sprite-item:hover .sprite-icon-2 {
+  background-position: center -273px;
+}
+
+.sprite-item:hover .sprite-icon-3 {
+  background-position: center -455px;
+}
+
+.sprite-item:hover .sprite-icon-4 {
+  background-position: center -639px;
+}
+
+.sprite-item:hover .sprite-icon-5 {
+  background-position: center -826px;
+}
+
+/* Featured Products */
+.featured-products-list {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-products-list li {
+  text-align: center;
+  margin:   30px;
+  font-weight: bold;
+  
+}
+
+.featured-products-list li.active {
+  color: var(--main-color);
+}
+
+.featured-products-list li:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.products-item {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.product-img {
+  position: relative;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+.product-overlay ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+
+.product-overlay ul li{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  margin: 2px;
+
+}
+
+.product-item:hover .product-overlay {
+  transform: scaleX(1);
+}
+
+.product-str {
+  display: flex;
+}
+
+.product-str i.active{
+  
+  color: rgb(253, 216, 8);
+}
+
+.product-str i.not-active {
+  color: rgb(170, 165, 165);
+}
+
+.product-info span {
+  display: block;
+  margin:20px 0 20px 0;
+}
 
 
 
